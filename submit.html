@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ส่งผลงาน - Neon Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-text-pink">📤 ส่งลิงก์เว็บหรือเกม</h1>
+        <p>ส่งผลงานของคุณเข้ามาเพื่อรอการตรวจสอบความปลอดภัยก่อนนำไปแสดงบนหน้าหลัก</p>
+
+        <div class="neon-box">
+            <form id="projectForm">
+                <label>ชื่อผลงาน:</label>
+                <input type="text" id="pName" placeholder="เช่น เกมแอคชันสุดมันส์" required>
+
+                <label>ประเภท:</label>
+                <select id="pType" style="width:100%; padding:10px; background:#111; color:#fff; border:1px solid #00f0ff;">
+                    <option value="เกม">เกม (Game)</option>
+                    <option value="เว็บไซต์">เว็บไซต์ (Website)</option>
+                </select>
+
+                <label>ลิงก์ผลงาน (ลิงก์ดิบสำหรับตรวจสอบ):</label>
+                <input type="url" id="pUrl" placeholder="https://..." required>
+
+                <label>คำอธิบายสั้นๆ:</label>
+                <textarea id="pDesc" rows="3" placeholder="อธิบายเกี่ยวกับผลงาน..." style="width:100%; background:#111; color:#fff; border:1px solid #00f0ff;"></textarea>
+
+                <button type="submit" class="neon-btn" style="margin-top: 15px; width:100%;">ส่งตรวจผลงาน</button>
+            </form>
+            <br>
+            <a href="index.html" style="color: #00f0ff;">← กลับหน้าแรก</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
